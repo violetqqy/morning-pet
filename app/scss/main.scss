@@ -1,0 +1,14 @@
+@import 'reset';
+@import 'swiper';
+@import 'header';
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.test {
+  color: #ccc;
+  height: 2000px;
+  background: #666;
+}

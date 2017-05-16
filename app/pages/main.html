@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Morning Pets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="${require('../images/favicon.ico')}">
+</head>
+
+<body>
+  <header id="pet-header" class="pet-header">
+    <div class="pet-logo"></div>
+    <div class="menu-btn" id="menu-btn">
+      <div class="bars">
+        <div class="bar b1"></div>
+        <div class="bar b2" style="opacity: 0; width: 75px; transform: matrix(1, 0, 0, 1, -140, 0);"></div>
+        <div class="bar b3"></div>
+      </div>
+    </div>
+    <!-- <nav class="menu-container dark active" id="menu-container">
+  <div class="bg">
+  </div>
+  <div class="border" style="opacity: 0.2;">
+    <div class="b-1" style="background-color: #2b353c;"></div>
+    <div class="b-2" style="background-color: #2b353c;"></div>
+    <div class="b-3" style="background-color: #2b353c;"></div>
+    <div class="b-4" style="background-color: #2b353c;"></div>
+  </div>
+  <div class="wrapper">
+    <div class="items">
+      <nav class="menu-cell">
+        <a href="/" class="item menu-link inner-link">
+          <span class="i-link">Projects</span>
+        </a>
+        <a href="/about/" class="item menu-link inner-link link-active">
+          <span class="i-link">About</span>
+        </a>
+        <a href="/contacts/" class="item menu-link inner-link">
+          <span class="i-link">Contacts</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+</nav>
+ -->
+  </header>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide pet-slide__container">
+        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_f1.jpg')})">
+          <div class="pet-slide__desc">
+            <h2>智能抗菌碗</h2>
+            <h3>每食每克 健康喂养</h3>
+            <button>了解详情</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide pet-slide__container">
+        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_h1.jpg')})">
+          <div class="pet-slide__desc pet-slide__desc--right">
+            <h2>智能抗菌碗</h2>
+            <h3>每食每克 健康喂养</h3>
+            <button>了解详情</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide pet-slide__container">
+        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_o1.jpg')})">
+          <div class="pet-slide__desc pet-slide__desc--light">
+            <h2>智能抗菌碗</h2>
+            <h3>每食每克 健康喂养</h3>
+            <button>了解详情</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 分页器 -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <div id="test" class="test"></div>
+  <section>
+  </section>
+  <footer>
+  </footer>
+</body>
+
+</html>
