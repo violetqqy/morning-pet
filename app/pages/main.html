@@ -9,42 +9,33 @@
 </head>
 
 <body>
-  <header id="pet-header" class="pet-header">
-    <div class="pet-logo"></div>
-    <div class="menu-btn" id="menu-btn">
-      <div class="bars">
+  <header class="pet-header" id="pet-header">
+    <div class="pet-logo">
+      <h1>摩派宠物</h1>
+    </div>
+    <div class="pet-menu" id="pet-menu">
+      <div class="pet-menu__bars">
         <div class="bar b1"></div>
-        <div class="bar b2" style="opacity: 0; width: 75px; transform: matrix(1, 0, 0, 1, -140, 0);"></div>
+        <div class="bar b2"></div>
         <div class="bar b3"></div>
       </div>
     </div>
-    <!-- <nav class="menu-container dark active" id="menu-container">
-  <div class="bg">
-  </div>
-  <div class="border" style="opacity: 0.2;">
-    <div class="b-1" style="background-color: #2b353c;"></div>
-    <div class="b-2" style="background-color: #2b353c;"></div>
-    <div class="b-3" style="background-color: #2b353c;"></div>
-    <div class="b-4" style="background-color: #2b353c;"></div>
-  </div>
-  <div class="wrapper">
-    <div class="items">
+  </header>
+  <nav class="pet-nav" id="pet-nav">
+    <div class="pet-nav__wrapper">
       <nav class="menu-cell">
-        <a href="/" class="item menu-link inner-link">
-          <span class="i-link">Projects</span>
+        <a href="/" class="menu-link">
+          <span class="i-link">产品信息</span>
         </a>
-        <a href="/about/" class="item menu-link inner-link link-active">
-          <span class="i-link">About</span>
+        <a href="/about/" class="menu-link">
+          <span class="i-link">关于我们</span>
         </a>
-        <a href="/contacts/" class="item menu-link inner-link">
-          <span class="i-link">Contacts</span>
+        <a href="/contacts/" class="menu-link">
+          <span class="i-link">联系方式</span>
         </a>
       </nav>
     </div>
-  </div>
-</nav>
- -->
-  </header>
+  </nav>
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide pet-slide__container">
@@ -66,8 +57,8 @@
         </div>
       </div>
       <div class="swiper-slide pet-slide__container">
-        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_o1.jpg')})">
-          <div class="pet-slide__desc pet-slide__desc--light">
+        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_f1.jpg')})">
+          <div class="pet-slide__desc">
             <h2>智能抗菌碗</h2>
             <h3>每食每克 健康喂养</h3>
             <button>了解详情</button>
@@ -78,10 +69,168 @@
     <!-- 分页器 -->
     <div class="swiper-pagination"></div>
   </div>
-  <div id="test" class="test"></div>
-  <section>
+  <section class="pet-list clear">
+    <div class="grid-container">
+      <div class="grid-row col-3">
+        <div class="pet-list__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-3">
+        <div class="pet-list__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-3">
+        <div class="pet-list__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-3">
+        <div class="pet-list__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
   </section>
-  <footer>
+  <div class="pet-waterfall clear">
+    <div class="grid-container">
+      <div class="grid-row col-6">
+        <div class="pet-waterfall__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-6">
+        <div class="pet-waterfall__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-3">
+        <div class="pet-waterfall__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-3">
+        <div class="pet-waterfall__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-3">
+        <div class="pet-waterfall__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-3">
+        <div class="pet-waterfall__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-3">
+        <div class="pet-waterfall__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-3">
+        <div class="pet-waterfall__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="grid-row col-3">
+        <div class="pet-waterfall__wrapper">
+          <figure>
+            <div class="image-container">
+              <img src="../images/morning-image/ceramics04.jpg">
+            </div>
+            <figcaption>我是产品哈哈哈哈</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="grid-row col-3">
+      <div class="pet-waterfall__wrapper">
+        <figure>
+          <div class="image-container">
+            <img src="../images/morning-image/ceramics04.jpg">
+          </div>
+          <figcaption>我是产品哈哈哈哈</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+  </div>
+  <footer class="pet-footer">
+    <div class="pet-footer__contact">
+      <ul class="contacts">
+        <li><a href="">产品信息</a></li>
+        <li><a href="">关于我们</a></li>
+        <li><a href="">联系方式</a></li>
+      </ul>
+    </div>
+    <div class="pet-footer__copyright">
+      <p>Copyright © 2012-2016 PETKIT Network Technology (Shanghai) Co., Ltd. 小佩网络科技（上海）有限公司
+      </p>
+      <p>沪ICP备13013996-2</p>
+    </div>
   </footer>
 </body>
 

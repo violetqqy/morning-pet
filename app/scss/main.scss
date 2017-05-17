@@ -1,14 +1,12 @@
 @import 'reset';
+@import 'grid';
 @import 'swiper';
 @import 'header';
+@import 'list';
+@import 'waterfall';
+@import 'footer';
 body {
   min-width: 320px;
   margin: 0 auto;
   color: #333;
-}
-
-.test {
-  color: #ccc;
-  height: 2000px;
-  background: #666;
 }

@@ -1,0 +1,31 @@
+.pet-list {
+  padding: 30px 10%;
+}
+
+.pet-list__wrapper {
+  padding: 30px;
+  text-align: center;
+  .image-container {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #efefef;
+    overflow: hidden;
+  }
+  .image-container:hover {
+    transform: rotate(360deg) scale(1.1);
+    -ms-transform: rotate(360deg) scale(1.1);
+    -webkit-transform: rotate(360deg) scale(1.1);
+    -o-transform: rotate(360deg) scale(1.1);
+    -moz-transform: rotate(360deg) scale(1.1);
+  }
+  img {
+    width: 100%;
+  }
+  figcaption {
+    margin-top: 2em;
+    padding-top: 1em;
+    line-height: 1.6;
+    font-size: 16px;
+    border-top: 1px solid #ccc;
+  }
+}

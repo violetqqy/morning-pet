@@ -1,0 +1,28 @@
+.pet-footer {
+  position: relative;
+  background: #2b353c;
+  color: #fff;
+  p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
+
+.pet-footer__contact {
+  padding: 30px;
+  height: 150px;
+  .contacts {
+    float: right;
+  }
+  li {
+    display: inline-block;
+    padding-left: 30px;
+    font-size: 14px;
+  }
+}
+
+.pet-footer__copyright {
+  color: #a0a0a0;
+  padding: 15px 30px;
+  border-top: 1px solid #424242;
+}

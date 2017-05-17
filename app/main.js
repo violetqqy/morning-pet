@@ -3,36 +3,39 @@ import '../node_modules/swiper/dist/css/swiper.min.css';
 import './scss/main.scss';
 import $ from 'jquery';
 
-$('#test').html('Hello world!');
-$('#test').on('click', function() {
-  alert('hahaha~');
-})
-
 $(document).ready(function() {
-  $(window).scrollTop(0);
+  //配置幻灯片动画
   var mySwiper = new Swiper('.swiper-container', {
     loop: true,
-    // autoplay: 3000,
-    // autoplayDisableOnInteraction: false,
-    // speed: 300,
+    autoplay: 3000,
+    autoplayDisableOnInteraction: false,
+    speed: 300,
     // 分页器
     pagination: '.swiper-pagination',
     paginationClickable: true,
   });
+  //滚动渐隐幻灯片
   $(window).scroll(function() {
-    var scrollTop = $(this).scrollTop(); //滚动高度  
-    var height = $(this).height(); //窗口高度
-    if(scrollTop <= height){
-      $('.swiper-container').css('opacity', (height-scrollTop)/height);
+    var oSwiper = $('.swiper-container');
+    var iScrollTop = $(this).scrollTop(); //滚动高度  
+    var iWindowHeight = $(this).height(); //窗口高度
+    if (iScrollTop <= iWindowHeight) {
+      //设置幻灯片的透明度
+      oSwiper.css('opacity', (iWindowHeight - iScrollTop) / iWindowHeight);
     }
-    if (scrollTop > 0) {
-      $('#pet-header').addClass('pet-header--active');
+    if (iScrollTop > 0) {
+      // $('#pet-header').addClass('pet-header--active');
     }
-    if (scrollTop < 1) {
-      $('#pet-header').removeClass('pet-header--active');
+    if (iScrollTop < 1) {
+      // $('#pet-header').removeClass('pet-header--active');
     }
-    // if (scrollTop < height) {
-    //   $('.swiper-container').removeClass('pet-swiper--active');
-    // }
+  });
+  //控制菜单按钮
+  var oHeader = $('#pet-header');
+  var oMenu = $('#pet-menu');
+  var oNav = $('#pet-nav');
+  oMenu.on('click', function() {
+    oHeader.toggleClass('dark');
+    oNav.toggleClass('active');
   });
 });
