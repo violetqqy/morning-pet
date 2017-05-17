@@ -24,10 +24,10 @@ $(document).ready(function() {
       oSwiper.css('opacity', (iWindowHeight - iScrollTop) / iWindowHeight);
     }
     if (iScrollTop > 0) {
-      // $('#pet-header').addClass('pet-header--active');
+      $('#pet-header').addClass('active');
     }
     if (iScrollTop < 1) {
-      // $('#pet-header').removeClass('pet-header--active');
+      $('#pet-header').removeClass('active');
     }
   });
   //控制菜单按钮
