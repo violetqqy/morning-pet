@@ -18,7 +18,7 @@ module.exports = {
     inline: true,
     compress: true,
     port: 9000,
-    // host: '192.168.0.106'
+    // host: '10.10.15.146'
     // 接口地址代理
     // proxy: {
     //   '/api/*': {
@@ -31,7 +31,7 @@ module.exports = {
   entry: {
     main: path.resolve(APP_PATH, 'main.js'),
     // 添加要打包在vendors里面的库
-    vendors: ['jquery', 'swiper']
+    vendors: ['jquery', 'swiper', 'i18next', 'jquery-i18next']
   },
   // 输出的文件名 合并以后的js会命名为[name].[hash].js
   output: {

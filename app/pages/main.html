@@ -5,13 +5,22 @@
   <meta charset="UTF-8">
   <title>Morning Pets</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="${require('../images/favicon.ico')}">
+  <link rel="icon" type="image/x-icon" href="${require('../images/favicon.png')}">
 </head>
 
-<body>
+<body style="background: #efefef">
   <header class="pet-header" id="pet-header">
-    <div class="pet-logo">
-      <h1>摩派宠物</h1>
+    <a class="pet-logo" href="main.html">
+      <h1 data-i18n="head.title">Moring Pet</h1>
+    </a>
+    <div class="pet-language">
+      <button class="pet-language__button">
+        <svg fill="#30373c" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" />
+        </svg>
+        <span data-i18n="head.language">SWITCH TO CHINESE</span>
+      </button>
     </div>
     <div class="pet-menu" id="pet-menu">
       <div class="pet-menu__bars">
@@ -25,50 +34,72 @@
     <div class="pet-nav__wrapper">
       <nav class="menu-cell">
         <a href="/" class="menu-link">
-          <span class="i-link">产品信息</span>
+          <span class="i-link" data-i18n="head.nav1">Products</span>
         </a>
         <a href="/about/" class="menu-link">
-          <span class="i-link">关于我们</span>
+          <span class="i-link" data-i18n="head.nav2">About</span>
         </a>
         <a href="/contacts/" class="menu-link">
-          <span class="i-link">联系方式</span>
+          <span class="i-link" data-i18n="head.nav3">Contact</span>
         </a>
       </nav>
     </div>
   </nav>
-  <div class="swiper-container">
+  <section class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide pet-slide__container">
-        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_f1.jpg')})">
-          <div class="pet-slide__desc">
+        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_01.jpg')})">
+          <!--  <div class="pet-slide__desc">
             <h2>智能抗菌碗</h2>
             <h3>每食每克 健康喂养</h3>
             <button>了解详情</button>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="swiper-slide pet-slide__container">
-        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_h1.jpg')})">
-          <div class="pet-slide__desc pet-slide__desc--right">
+        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_02.jpg')})">
+          <!--   <div class="pet-slide__desc pet-slide__desc--right">
             <h2>智能抗菌碗</h2>
             <h3>每食每克 健康喂养</h3>
             <button>了解详情</button>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="swiper-slide pet-slide__container">
-        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_f1.jpg')})">
-          <div class="pet-slide__desc">
+        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_03.jpg')})">
+          <!--  <div class="pet-slide__desc">
             <h2>智能抗菌碗</h2>
             <h3>每食每克 健康喂养</h3>
             <button>了解详情</button>
-          </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="swiper-slide pet-slide__container">
+        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_04.jpg')})">
+          <!--  <div class="pet-slide__desc">
+            <h2>智能抗菌碗</h2>
+            <h3>每食每克 健康喂养</h3>
+            <button>了解详情</button>
+          </div> -->
+        </div>
+      </div>
+      <div class="swiper-slide pet-slide__container">
+        <div class="pet-slide" style="background-image: url(${require('../images/index_slide_05.jpg')})">
+          <!--  <div class="pet-slide__desc">
+            <h2>智能抗菌碗</h2>
+            <h3>每食每克 健康喂养</h3>
+            <button>了解详情</button>
+          </div> -->
         </div>
       </div>
     </div>
     <!-- 分页器 -->
     <div class="swiper-pagination"></div>
-  </div>
+  </section>
+  <section class="pet-slogan">
+    <h6 class="aim" data-i18n="head.aim">where to go and what to go after</h6>
+    <h2 class="slogan" data-i18n="head.slogan">For you, for your pet, for your life.</h2>
+  </section>
   <section class="pet-list clear">
     <div class="grid-container">
       <div class="grid-row col-3">
@@ -113,7 +144,7 @@
       </div>
     </div>
   </section>
-  <div class="pet-waterfall clear">
+  <section class="pet-waterfall clear">
     <div class="grid-container">
       <div class="grid-row col-6">
         <div class="pet-waterfall__wrapper">
@@ -216,18 +247,18 @@
         </figure>
       </div>
     </div>
-  </div>
-  </div>
+  </section>
   <footer class="pet-footer">
     <div class="pet-footer__contact">
-      <ul class="contacts">
-        <li><a href="">产品信息</a></li>
-        <li><a href="">关于我们</a></li>
-        <li><a href="">联系方式</a></li>
-      </ul>
+    </div>
+    <!--   <ul class="contacts">
+        <li><a href="" data-i18n="head.nav1">Products</a></li>
+        <li><a href="" data-i18n="head.nav2">About</a></li>
+        <li><a href="" data-i18n="head.nav3">Contact</a></li>
+      </ul> -->
     </div>
     <div class="pet-footer__copyright">
-      <p>Copyright © 2012-2016 PETKIT Network Technology (Shanghai) Co., Ltd. 小佩网络科技（上海）有限公司
+      <p>Copyright © 2012-2016 Morning Pet (China) Co., Ltd 美仕科技(中国)有限公司
       </p>
       <p>沪ICP备13013996-2</p>
     </div>

@@ -1,0 +1,25 @@
+.pet-slogan {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #8b98a3;
+  background: #2b353c;
+  text-align: center;
+  .aim {
+    font-family: 'Stem Web', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .slogan {
+    font-family: 'Stem Web', sans-serif;
+    letter-spacing: 0.015em;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 35px;
+    font-size: 48px;
+  }
+}
