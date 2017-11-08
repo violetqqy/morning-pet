@@ -1,7 +1,9 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/build
+/app
+webpack.config.js
+webpack.prod.config.js
 
 # dependencies
 /node_modules
