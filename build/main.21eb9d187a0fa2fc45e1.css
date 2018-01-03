@@ -151,7 +151,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 73px;
+  height: 86px;
   background: transparent;
   padding: 15px 10%;
   z-index: 100;
@@ -162,16 +162,16 @@ a {
   .pet-header .pet-logo {
     display: block;
     width: 320px;
-    height: 43px;
-    line-height: 43px;
-    padding-left: 56px;
-    background: url(1f919af8c89515d0a2f5953188847343.png) no-repeat left center;
+    height: 56px;
+    line-height: 56px;
+    padding-left: 100px;
+    background: url(b1b9948dbfaad31c3ae6fba9a790df81.png) no-repeat left center;
     background-size: auto 100%; }
   .pet-header h1 {
     color: #30373c;
     font-size: 24px;
     font-weight: 500;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     transition: color .2s;
     -moz-transition: color .2s;
     -webkit-transition: color .2s;
